@@ -1,0 +1,379 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('img/img5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100% ;
+    margin: 0 auto; /* Plaats de box in het midden van de pagina */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px 0; /* Meer ruimte boven en onder de kop */
+    text-align: center;
+    position: relative;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Add this line to center the menu */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #a6c6cf;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    flex-wrap: wrap;
+    padding: 20px; /* Minder padding toegevoegd voor inhoud */
+    margin: 30px 0; /* Minder ruimte boven en onder secties */
+    border: 2px solid black; 
+    border-radius: 12px;  
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.908);
+    width: 100%;
+    max-width: 600px; /* Voeg dit toe om de breedte te beperken */
+}
+
+section h2 {
+    text-align: center; /* Tekst centreren */
+    color: black; /* Tekstkleur toegevoegd */
+}
+
+section p {
+    text-align: justify; /* Tekst uitlijnen */
+    color: black; /* Tekstkleur toegevoegd */
+}
+
+section.overmij,
+section.opleiding,
+section.computervaardigheden,
+section.vaardigheden,
+section.hobbys,
+section.talen,
+section.werkervaring,
+section.projecten,
+section.contact {
+    margin: 30px 0; /* Minder ruimte boven en onder secties */
+}
+
+.vaardigheden p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Voeg wat ruimte toe tussen de tekst en de sterren */
+    margin: 10px 0; /* Ruimte tussen de regels vaardigheden */
+}
+
+.computervaardigheden p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Voeg wat ruimte toe tussen de tekst en de sterren */
+    margin: 10px 0; /* Ruimte tussen de regels vaardigheden */
+}
+.talen p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Voeg wat ruimte toe tussen de tekst en de sterren */
+    margin: 10px 0; /* Ruimte tussen de regels vaardigheden */
+}
+
+.opleiding p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Voeg wat ruimte toe tussen de tekst en de sterren */
+    margin: 10px 0; /* Ruimte tussen de regels vaardigheden */
+}
+
+.hobbys p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Voeg wat ruimte toe tussen de tekst en de sterren */
+    margin: 10px 0; /* Ruimte tussen de regels vaardigheden */
+
+}
+
+.contact p {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Voeg wat ruimte toe tussen het telefoonnummer en de afbeelding */
+}
+
+.contact a {
+    color: black; /* Zet de tekstkleur op zwart */
+    text-decoration: none; /* Verwijder de standaard onderstreping van links */
+}
+
+.contact a:hover {
+    text-decoration: underline; /* Voeg onderstreping toe bij hover, optioneel */
+}
+
+.contact a p {
+    color: black; /* Zorg ervoor dat de tekst in de paragrafen ook zwart is */
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Meer ruimte boven en onder de footer */
+    position: relative; /* Veranderd van fixed naar relative */
+    width: 100%;
+    bottom: 0; /* Verwijderd */
+}
+
+footer a {
+    color: white; /* Verander de tekstkleur naar wit */
+    text-decoration: none; /* Verwijder de onderstreepte lijnen */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Voeg onderstreping toe bij hover (optioneel) */
+}
+
+/* Nieuwe CSS voor kleine afbeeldingen in de contact sectie */
+.small-img, .contact img {
+    width: 50px; /* Pas de breedte naar wens aan */
+    height: auto; /* Zorgt ervoor dat de hoogte proportioneel blijft */
+    display: inline-block; /* Zorgt dat ze naast elkaar kunnen staan */
+    margin: 5px; /* Ruimte tussen de afbeeldingen */
+}
+
+.small-img1 {
+    width: 56px !important; /* Pas de breedte aan naar wens */
+    height: auto !important; /* Zorgt ervoor dat de hoogte proportioneel wordt aangepast */
+}
+
+.project-item {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    border: 2px solid black; /* Zwarte lijn rondom het project */
+    padding: 10px; /* Ruimte binnenin het project */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Schaduw */
+}
+
+.project-img {
+    width: 580px;
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: -3px -3px 10px rgba(0, 0, 0, 0.5); /* Negatieve offset voor uitlijning */
+}
+
+.overmij img {
+    display: block; /* Zorg ervoor dat de afbeelding het hele beschikbare horizontale gebied inneemt */
+    margin: 0 auto; /* Plaats de afbeelding in het midden van de sectie */
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5); /* Schaduw */
+    border-radius: 8px; /* Afgeronde hoeken */
+}
+
+.overmij a {
+    display: inline-block;
+    padding: 10px 20px; /* Voeg wat ruimte toe rond de tekst */
+    background-color: black; /* Maak de achtergrond van de knop zwart */
+    color: white; /* Maak de tekst wit */
+    border-radius: 5px; /* Voeg afgeronde hoeken toe aan de knop */
+    text-decoration: none; /* Verwijder de onderstreping van de link */
+    transition: background-color 0.3s, color 0.3s; /* Voeg een vloeiende overgang toe voor kleurveranderingen */
+    
+}
+
+.overmij a:hover {
+    background-color: #333; /* Donkerder zwart bij hover */
+}
+
+
+.opleiding img {
+    display: block; /* Zorg ervoor dat de afbeelding het hele beschikbare horizontale gebied inneemt */
+    margin: 0 auto; /* Plaats de afbeelding in het midden van de sectie */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Schaduw */
+    border-radius: 8px; /* Afgeronde hoeken */
+    height: 150px; /* Hoogte van de afbeelding */
+}
+
+.computervaardigheden img {
+    display: block; /* Zorg ervoor dat de afbeelding het hele beschikbare horizontale gebied inneemt */
+    margin: 0 auto; /* Plaats de afbeelding in het midden van de sectie */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Schaduw */
+    border-radius: 8px; /* Afgeronde hoeken */
+    height: 150px; /* Hoogte van de afbeelding */
+
+}
+
+.vaardigheden img {
+
+    display: block; /* Zorg ervoor dat de afbeelding het hele beschikbare horizontale gebied inneemt */
+    margin: 0 auto; /* Plaats de afbeelding in het midden van de sectie */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Schaduw */
+    border-radius: 8px; /* Afgeronde hoeken */
+    height: 150px; /* Hoogte van de afbeelding */
+
+}
+
+.hobbys img {
+
+    display: block; /* Zorg ervoor dat de afbeelding het hele beschikbare horizontale gebied inneemt */
+    margin: 0 auto; /* Plaats de afbeelding in het midden van de sectie */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Schaduw */
+    border-radius: 8px; /* Afgeronde hoeken */
+    height: 200px; /* Hoogte van de afbeelding */
+
+}
+
+.talen img {
+
+    display: block; /* Zorg ervoor dat de afbeelding het hele beschikbare horizontale gebied inneemt */
+    margin: 0 auto; /* Plaats de afbeelding in het midden van de sectie */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Schaduw */
+    border-radius: 8px; /* Afgeronde hoeken */
+    height: 150px; /* Hoogte van de afbeelding */
+
+}
+
+.werkervaring img {
+    display: block; /* Zorg ervoor dat de afbeelding het hele beschikbare horizontale gebied inneemt */
+    margin: 0 auto; /* Plaats de afbeelding in het midden van de sectie */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Schaduw */
+    border-radius: 8px; /* Afgeronde hoeken */
+    height: 150px; /* Hoogte van de afbeelding */
+}
+
+.projecten .project {
+    display: block; /* Zorg ervoor dat de afbeelding het hele beschikbare horizontale gebied inneemt */
+    margin: 0 auto; /* Plaats de afbeelding in het midden van de sectie */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Schaduw */
+    border-radius: 8px; /* Afgeronde hoeken */
+    height: 150px; /* Hoogte van de afbeelding */
+    
+}
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Stijl voor de menu-toggleknop op mobiele en tabletapparaten */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9); /* Aangepaste achtergrondkleur met hogere opaciteit */
+        text-align: center;
+        border-radius: 8px;
+        z-index: 1000; /* Zorg ervoor dat het menu boven de inhoud wordt weergegeven */
+    }
+    
+    nav ul.open {
+        display: flex;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .overmij .contact .hobbys .computervaardigheden .opleiding .projecten .talen .vaardigheden .werkervaring {
+        scale: 0.7;
+        
+    }
+}
+
+/* Zorg ervoor dat het navigatiemenu standaard zichtbaar is op laptops en desktops */
+@media (min-width: 769px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .overmij{
+        scale: 1;
+    }
+}
