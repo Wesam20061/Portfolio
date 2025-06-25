@@ -100,6 +100,23 @@ section.contact {
     margin: 10px 0; /* Ruimte tussen de regels vaardigheden */
 }
 
+.technologieen p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.technologieen img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    height: 150px;
+}
+
+
 .computervaardigheden p {
     display: flex;
     justify-content: center;
